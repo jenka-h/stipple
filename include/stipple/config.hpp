@@ -10,7 +10,8 @@ enum class Backend {
     SerialSIMD,
     OpenMP,
     OpenMPSIMD,
-    CUDA
+    CUDA,
+    All
 };
 
 struct LloydConfig {

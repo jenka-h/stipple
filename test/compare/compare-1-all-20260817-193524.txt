@@ -1,0 +1,48 @@
+Stipple run report
+==================
+Input: test/in/1.jpg
+Requested mode: all
+Points: 5000
+Iterations: 30
+Epsilon: 0.001
+Seed: 42
+Report: test/compare/compare-1-all-20260817-193524.txt
+
+----------------------------------------
+Mode: serial
+Status: passed
+Output: test/out/1-serial-serial.png
+Iterations completed: 30
+Final average movement: 0.0914455
+Elapsed: 368182 ms
+
+----------------------------------------
+Mode: serial-simd
+Status: passed
+Output: test/out/1-serial-serial-simd.png
+Iterations completed: 30
+Final average movement: 0.0914455
+Elapsed: 209289 ms
+
+----------------------------------------
+Mode: openmp
+Status: passed
+Output: test/out/1-serial-openmp.png
+Iterations completed: 30
+Final average movement: 0.0916324
+Elapsed: 52286 ms
+
+----------------------------------------
+Mode: openmp-simd
+Status: passed
+Output: test/out/1-serial-openmp-simd.png
+Iterations completed: 30
+Final average movement: 0.0916324
+Elapsed: 25085 ms
+
+----------------------------------------
+Mode: cuda
+Status: failed
+Output: test/out/1-serial-cuda.png
+Error: CUDA backend was not built. Reconfigure with -DSTIPPLE_ENABLE_CUDA=ON and a CUDA compiler.
+

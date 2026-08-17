@@ -1,0 +1,4 @@
+build/
+build-*/
+test/out/*
+!test/out/.gitignore

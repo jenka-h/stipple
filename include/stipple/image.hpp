@@ -12,6 +12,5 @@ struct Image {
 };
 
 Image load_density_image(const std::string& path);
-void save_density_preview(const Image& image, const std::string& path);
 
 } // namespace stipple
